@@ -13,3 +13,56 @@
 .profile:focus {
   transform: scale(1.02);
 }
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.profileImg {
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 180px;
+  background: var(--dark-bg-img);
+}
+
+.profileName {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profileTag {
+  margin-bottom: 10px;
+  color: var(--dark-bg-img);
+}
+
+.profileLocation {
+  color: var(--dark-bg-img);
+}
+.profileStats {
+  display: flex;
+  background-color: var(--profile-stats-bg-color);
+}
+
+.profileItem {
+  flex-basis: calc(100% / 3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-top: 1px solid var(--profile-stats-border-color);
+}
+
+.profileItem:not(:last-child) {
+  border-right: 1px solid var(--profile-stats-border-color);
+}
+.profileLabel {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.profileQuantity {
+  font-weight: 600;
+}
