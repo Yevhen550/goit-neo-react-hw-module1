@@ -5,10 +5,11 @@ import transactions from "./data/transactions.json";
 import Profile from "./components/Profile/Profile";
 import FriendsList from "./components/FriendList/FriendList";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import Container from "./components/Container/Container";
 
 const App = () => {
   return (
-    <>
+    <Container>
       <Profile
         name={username}
         tag={tag}
@@ -18,7 +19,7 @@ const App = () => {
       />
       <FriendsList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </>
+    </Container>
   );
 };
 

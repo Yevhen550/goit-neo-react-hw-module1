@@ -1,0 +1,15 @@
+.profile {
+  max-width: 100%;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-radius: 6px;
+  box-shadow: var(--card-shadow);
+
+  transform: scale(1);
+  transition: transform var(--animation);
+}
+
+.profile:hover,
+.profile:focus {
+  transform: scale(1.02);
+}

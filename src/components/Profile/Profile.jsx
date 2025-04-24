@@ -1,3 +1,5 @@
+import s from "./Profile.module.css";
+
 const Profile = ({
   name,
   tag,
@@ -6,7 +8,7 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div>
+    <div className={s.profile}>
       <div>
         <img src={image} alt={name} />
         <p>{name}</p>
