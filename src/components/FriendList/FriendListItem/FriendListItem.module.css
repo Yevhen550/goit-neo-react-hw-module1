@@ -1,9 +1,4 @@
 .friendCard {
-  border-radius: 6px;
-  box-shadow: var(--card-shadow);
-
-  transform: scale(1);
-  transition: transform var(--animation);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -13,4 +8,30 @@
   padding: 20px;
   position: relative;
   width: 210px;
+  transform: scale(1);
+  transition: transform var(--animation);
+}
+
+.friendCard:hover,
+.friendCard:focus {
+  transform: scale(1.02);
+}
+
+.friendAvatar {
+  margin-bottom: 10px;
+}
+
+.friendName {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.online {
+  color: var(--online-status-color);
+  font-size: 15px;
+}
+
+.offline {
+  color: var(--offline-status-color);
+  font-size: 15px;
 }
