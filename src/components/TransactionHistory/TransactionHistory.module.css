@@ -3,6 +3,7 @@
   box-shadow: var(--card-shadow);
   text-align: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .transactionHead {
@@ -11,16 +12,16 @@
   font-size: 20px;
 }
 tr:nth-child(2n) {
-    background-color: var(--trow-bg-color);
+  background-color: var(--trow-bg-color);
 }
 
 .transactionBody tr:hover {
-    background-color: var(--trow-accent-bg-color);
+  background-color: var(--trow-accent-bg-color);
 }
 
 th,
 td {
-    width: calc(100% / 3);
-    height: 40px;
-    border: 1px solid var(--table-border-color);
+  width: calc(100% / 3);
+  height: 40px;
+  border: 1px solid var(--table-border-color);
 }
