@@ -1,0 +1,26 @@
+.transactionTable {
+  border-collapse: collapse;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  width: 100%;
+}
+
+.transactionHead {
+  background-color: var(--thead-bg-color);
+  color: var(--white-text-color);
+  font-size: 20px;
+}
+tr:nth-child(2n) {
+    background-color: var(--trow-bg-color);
+}
+
+.transactionBody tr:hover {
+    background-color: var(--trow-accent-bg-color);
+}
+
+th,
+td {
+    width: calc(100% / 3);
+    height: 40px;
+    border: 1px solid var(--table-border-color);
+}

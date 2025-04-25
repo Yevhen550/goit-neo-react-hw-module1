@@ -1,6 +1,8 @@
+import s from "./FriendListItem.module.css"
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div>
+    <div className={s.friendCard}>
       <img src={avatar} alt={name} width="48" />
       <p>{name}</p>
       <p>{isOnline}</p>
@@ -9,3 +11,4 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 };
 
 export default FriendListItem;
+
